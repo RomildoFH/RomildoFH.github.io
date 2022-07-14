@@ -1,0 +1,93 @@
+//Criando portifólio através do terminal VS Code
+
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/romildofh/OneDriver/Programming/Portifolio/.git/
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Imagens/
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git branch -m main
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git branch
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Imagens/
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git remote add origin git@github.com:RomildoFH/RomildoFH.github.io.git
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git remote -v
+origin  git@github.com:RomildoFH/RomildoFH.github.io.git (fetch)
+origin  git@github.com:RomildoFH/RomildoFH.github.io.git (push)
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Imagens/
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git add .
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Imagens/WhatsApp Image 2022-07-13 at 21.09.53.jpeg
+        new file:   Imagens/foto perfil 1.png
+        new file:   index.html
+
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git commit -m "Criando portifólio pessoal"
+[main (root-commit) 5b6cd90] Criando portifólio pessoal
+ 3 files changed, 78 insertions(+)
+ create mode 100644 Imagens/WhatsApp Image 2022-07-13 at 21.09.53.jpeg
+ create mode 100644 Imagens/foto perfil 1.png
+ create mode 100644 index.html
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git status
+On branch main
+nothing to commit, working tree clean
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git push origin main
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 236.13 KiB | 292.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:RomildoFH/RomildoFH.github.io.git
+ * [new branch]      main -> main
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git status
+On branch main
+nothing to commit, working tree clean
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ git log
+commit 5b6cd90ba6cf59de159240b3042956d2fadfdd64 (HEAD -> main, origin/main)
+Author: Romildo Silva Filho <romildo.silvafilho1@gmail.com>
+Date:   Wed Jul 13 22:13:08 2022 -0300
+
+    Criando portifólio pessoal
+romildofh@romildo-ubuntu:~/OneDriver/Programming/Portifolio$ 
