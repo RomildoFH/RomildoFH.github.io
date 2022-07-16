@@ -1,0 +1,98 @@
+body {
+    /*background-color: #4F6D7A;*/
+    background-color: #A17C6B;
+    text-align: left;
+    color:white;
+}
+
+.foto-perfil {
+    border-radius:50%;
+}
+
+h6 {
+    font-style:italic;
+}
+
+li {
+    list-style-type:none;
+}
+
+.observation {
+    font-style:italic;
+}
+
+p {
+    text-align:justify;
+}
+
+/* Personalizando hardskills */
+
+.skill-calc{
+    font-size: 20px;
+}
+
+.skill-arquitetura{
+    font-size: 19px;
+}
+
+.skill-vr{
+    font-size: 18px;
+}
+
+.skill-js{
+    font-size: 17px;
+}
+
+.skill-html{
+    font-size: 16px;
+}
+
+.skill-office{
+    font-size: 15px;
+}
+
+.skill-ingles{
+    font-size: 14px;
+}
+
+#foto-perfil {
+    margin:auto
+}
+
+
+   /* Personalização de links */
+   
+a:link {
+        text-decoration: none;
+        color: #A17C6B;
+        background-color: #191c1d;
+        padding: 10px 30px;
+        border-radius: 8px;
+    }
+    
+a:visited {
+        color: #A17C6B;
+        text-decoration: none;
+        background-color: #191c1d;                
+        border-color:#A17C6B;
+    }
+    
+a:hover {
+        text-decoration:none;
+        color: #ffffff;
+        background-color: #A78682;                
+        border-color:#A17C6B;
+    }
+    
+a:active {
+        text-decoration: underline;
+        color: #A17C6B;
+        background-color: #A78682;
+        border-color:#A17C6B;
+    }
+
+.summary li a:link {
+    background-color: aqua;
+}
+    
+              
