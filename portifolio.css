@@ -43,4 +43,68 @@
 body {
     background-color: rgb(37, 69, 95);
     );
+    color: white;
+}
+
+#presentation {
+    height: 400px;
+}
+
+#initial-image {
+    height: 75%
+    
+}
+
+#text-photo {
+    position:absolute;
+    top: 50%;
+    left:15%;
+    text-shadow: 2px 2px black;
+}
+
+#presentation p{
+    font-family:monospace;
+    font-size: 9px;
+    font-weight: bolder;
+}
+
+#my-timeline {
+    display: inline-block;
+}
+
+#my-timeline ul {
+    display:inline-block;
+    width: 50%;
+    padding: 0% 0% 0% 2%;
+    text-align: justify;
+    margin-top: 0;
+}
+
+#photo-colage {
+    display:inline-block;
+    width: 50%;
+    padding: 0% 0% 0% 0%;
+    text-align: justify;
+    margin-top: 0px 0px 0px 2px;
+    float:right;
+    position: absolute;   
+    overflow: hidden;
+}
+
+#photo-colage img{
+   background-color: rgb(37, 69, 95);
+    
+}
+
+#portfolio {
+    margin-top: 50px;
+    
+}
+
+footer {
+    background-image: url(Imagens/footer_image.jpg);
+}
+
+#footer {
+    height: 80px;
 }
