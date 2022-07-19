@@ -108,10 +108,10 @@ body {
 }
 
 #photo-colage img{
-   background-color: rgb(37, 69, 95);
    width: 100px;
-    
+   filter: drop-shadow(0 0 0.75rem rgba(223, 214, 216, 0.774));    
 }
+
 
 #hardskills-bg {
     background-image: url("imagens_portfolio/bricks.jpg");
