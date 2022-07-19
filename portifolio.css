@@ -6,6 +6,15 @@
     /* position:fixed; */
 }
 
+#header-bg {
+    margin: 0;
+    height: 80px;
+    width: 100%;
+    background-image: url(imagens_portfolio/header_image.jpg);
+    position:fixed;
+    z-index: 1;
+}
+
 #logo {
     position:absolute;
     display: inline;
@@ -145,6 +154,14 @@ body {
 #hardskills-list li:hover {
     font-size: 450%;
     text-shadow: 10px 10px solid red;
+}
+
+#hardskills-list li:nth-child(odd):hover {
+    color:yellow;
+}
+
+#hardskills-list li:nth-child(even):hover {
+    color:greenyellow;
 }
 
 #quadro {
