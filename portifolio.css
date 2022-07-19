@@ -2,7 +2,7 @@
     margin: 0;
     height: 80px;
     width: 100%;
-    background-image: url(imagens/header_image.jpg);
+    background-image: url(imagens_portfolio/header_image.jpg);
     /* position:fixed; */
 }
 
@@ -106,7 +106,7 @@ body {
 }
 
 #hardskills-bg {
-    background-image: url(Imagens/bricks.jpg);
+    background-image: url(imagens_portfolio/bricks.jpg);
     border: 50px;
     padding: 50px;
 
@@ -156,7 +156,7 @@ body {
 }
 
 footer {
-    background-image: url(Imagens/footer_image.jpg);
+    background-image: url(imagens_portfolio/footer_image.jpg);
 }
 
 #footer {
