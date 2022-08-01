@@ -23,7 +23,7 @@
 
 #menu-top {
     float: right;
-    display:inline-block;
+    /* display:inline-block; */
     /* width: 200px; */
     height: 100px;
     margin-top: 1%;
@@ -93,7 +93,7 @@ body {
     padding: 0% 0% 0% 0%;
     text-align: justify;
     margin-top: 0px 0px 0px 2px;
-    float:right;
+    /* float:right; */
     position: absolute;   
     overflow: hidden;
 }
