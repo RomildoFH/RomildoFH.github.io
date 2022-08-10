@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 #header {
     margin: 0;
     height: 80px;
@@ -72,9 +77,8 @@ body {
 }
 
 #my-timeline {
-    display: inline-block;
+    display: flex;
     margin-top: 50px;
-    margin: auto;
     width: 100%;
 }
 
@@ -88,21 +92,33 @@ body {
 }
 
 #photo-colage {
-    display:inline-block;
-    width: 50%;
-    padding: 0% 0% 0% 0%;
-    text-align: justify;
-    margin-top: 0px 0px 0px 2px;
-    /* float:right; */
-    position: absolute;   
-    overflow: hidden;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   background-clip: content-box;
+   padding: 0;
 }
 
-#photo-colage img{
-   background-color: rgb(37, 69, 95);
-   width: 100px;
-    
+#photo-colage li{
+    display: inline-block;   
+ }
+
+ .big {
+    width: 55%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
 }
+
+.small {
+    width: 40%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
 
 #hardskills-bg {
     background-image: url("imagens_portfolio/bricks.jpg");
@@ -194,3 +210,4 @@ a:hover {
     text-decoration:underline;
     border-radius: 5px
 }
+
