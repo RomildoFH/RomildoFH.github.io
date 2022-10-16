@@ -1,213 +1,178 @@
+/* font-family: 'Laila', sans-serif;
+font-family: 'Playfair Display SC', serif; */
+
 * {
     margin: 0;
     padding: 0;
 }
 
-#header {
-    margin: 0;
-    height: 80px;
-    width: 100%;
-    background-image: url(imagens_portfolio/header_image.jpg);
-    /* position:fixed; */
-}
-
-#logo {
-    position:absolute;
-    display: inline;
-    margin: 0px;
-    height:80px;
-    width: 80px;
-}
-
-#logo-foto {
-    position:absolute;
-    display: inline;
-    height:80px;
-    width: 80px;
-}
-
-#menu-top {
-    float: right;
-    /* display:inline-block; */
-    /* width: 200px; */
-    height: 100px;
-    margin-top: 1%;
-}
-
-#menu-top li {
-    display:inline-block;
-    width: 100px;
-    /* background-color: black; */
-    color: white;
-    text-align: center;
-    margin-right: 10px;
-}
-
-
 body {
-    background-color: rgb(37, 69, 95);    
-    color: white;
-    
-}
-
-#presentation {
-    max-width: 100%;
-
-}
-
-#initial-image {
-    width: 100%;
-    border-top:150px;
-    
-}
-
-#text-photo {
-    position:absolute;
-    top: 50%;
-    left:30%;
-    text-shadow: 4px 4px black;
-    font-size: 200%;
-}
-
-.presentation p{
-    font-family:monospace;
-    font-size: 18px;
-    font-weight: bolder;
-    text-align: center;
-}
-
-#my-timeline {
-    display: flex;
-    margin-top: 50px;
-    width: 100%;
-}
-
-#my-timeline ul {
-    display:inline-block;
-    width: 50%;
-    padding: 0% 0% 0% 2%;
-    text-align: justify;
-    margin-top: 0;
-    line-height: 35px;
-}
-
-#photo-colage {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   background-clip: content-box;
-   padding: 0;
-}
-
-#photo-colage li{
-    display: inline-block;   
- }
-
- .big {
-    width: 55%;
-    height: 50%;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-}
-
-.small {
-    width: 40%;
-    height: 50%;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-}
-
-
-#hardskills-bg {
-    background-image: url("imagens_portfolio/bricks.jpg");
-    /* border: 2px solid red; */
-    padding: 50px;
-
-}
-
-.hardskills {
-    position:relative;
-}
-
-#hardskills-title {
-    font-family:monospace;
-    font-size: 700%;
-    font-weight: bolder;
-    text-align: center;
-    position:absolute;    
-    top: 200%;
-    margin: 0px;
-    width: 100%;
-}
-
-#hardskills-list {
-    font-weight: bolder;
-    text-align: left;
-    position:absolute;    
-    top: 220%;
-    left: 15%;
-    margin: 0px;
-}
-
-#hardskills-list li {
-    list-style-type:none;
-    font-family:Jazz LET, fantasy;
-    font-size: 400%;
-    line-height: 120%;
-}
-
-#hardskills-list li:hover {
-    font-size: 450%;
-    text-shadow: 10px 10px solid red;
-}
-
-#quadro {
-    width: 80%;
-    margin-left: 10%;
-    /* position: absolute; */
-    top:-20%
-}
-
-#portfolio {
-    margin-top: 50px;
-    
-}
-
-footer {
-    background-image: url(imagens_portfolio/footer_image.jpg);
-}
-
-#footer {
-    height: 80px;
-}
-
-#footer li {
-    list-style-type: none;
-    line-height: 25px;
-}
-
-/* Personalização de links */
-
-a:link {
-    color:white;
     background-color: black;
-    padding: 3px 20px;
-    text-decoration: none;
-    border-radius: 5px
-
+    color: white;
+    /* font-family: 'Playfair Display SC', serif; */
 }
 
-a:visited {
-    color:white;
-    text-decoration: none;
-    border-radius: 5px
+header {}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 16px;
+    font-family: 'Playfair Display SC', serif;
 }
 
-a:hover {
-    background-color: gray;
-    text-decoration:underline;
-    border-radius: 5px
+#header-title {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 65%;
 }
 
+#logo-header {
+    max-width: 80px;
+}
+
+#header-name {
+    text-transform: uppercase;
+    margin-left: 15px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.header-controls {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.page-ancora-btn {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 15px;
+    font-weight: 700;
+    height: 30px;
+    padding: 4px 12px;
+    text-transform: uppercase;
+    width: 130px;
+}
+/* ----------------------------------------------------------------------------------------
+This part of the code was based on the code located at this article: https://onaircode.com/css-gradient-button-examples/ */
+.btn {
+    flex: 1 1 auto;
+    margin: 14px;
+    padding: 4px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: 0px;
+    box-shadow: 2px 2px 2px black;
+   }
+   .btn:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+   .btn-4 {
+    background-image: linear-gradient(to right, #242527 0%, #85888a 51%, #eceff3 100%);
+  }
+/* End of the code from onaircode.com */
+/* --------------------------------------------------------------------------------------------- */
+
+#presentation-picture {
+    background-image: url("./imagens_portfolio/Imagem3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100%;
+    height: 500px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.contact-section {
+    background-image: url("https://cdn.pixabay.com/photo/2020/10/28/06/11/smartphone-5692533_960_720.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    min-height: 500px;
+    max-height: 500px;
+    margin-top: 40px;
+    width: 100%;
+    font-family: 'Playfair Display SC', serif;
+    text-shadow: 1px 1px 1px black;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40%;
+    width: 60%;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-title {
+    justify-self:flex-start;
+}
+
+.social-container a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-container img {
+    width: 30%;
+}
+
+.social-container img:hover {
+    width: 35%;
+    
+}
+
+#contact-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 70%;
+}
+
+label {
+    margin-top: 15px;
+}
+
+.input-form {
+    margin-top: 4px;
+    width: 80%;
+}
+
+.btn-submit {
+    flex: 1 1 auto;
+    margin-top: 14px;
+    padding: 4px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: 0px;
+    box-shadow: 2px 2px 2px black;
+    width: 80%;
+   }
+   .btn-submit:hover {
+    background-position: right center; /* change the direction of the change here */
+  }
+   .btn-5 {
+    background-image: linear-gradient(to right, #242527 0%, #85888a 51%, #eceff3 100%);
+  }
+
+  footer {
+    text-align: center;
+  }

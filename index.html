@@ -2,102 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;600;700&family=Playfair+Display+SC&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portfolio</title>
+    <title>Romildo's Portfolio</title>
     <link rel="stylesheet" href="portifolio.css">
 </head>
 <body>
     <header>
-        <div id="header">               
-            <div id="logo">        
-                <img id="logo-foto" src="imagens_portfolio/logo.png" alt="header image" >
+        <div class="header-container">
+            <div id="header-title">
+                <img id="logo-header" src="./imagens_portfolio/logo.png" alt="">
+                <h2 id="header-name">Romildo Silva</h2>
             </div>
-            <div id="menu-top">
-                <ul>
-                    <li><a href="#my-timeline"> About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#footer">Contact</a></li>
-                </ul>
+            <div class="header-controls">
+                <button class="page-ancora-btn btn btn-4">About Me</button>
+                <button class="page-ancora-btn btn btn-4">My Projects</button>
+                <button class="page-ancora-btn btn btn-4">Hire Me</button>
             </div>
         </div>
     </header>
     <main>
         <section>
-            <div>
-                <div class="presentation">
-                    <img id="initial-image" src="imagens_portfolio/Imagem3.jpg" alt="romildo-silva">
-                    <h1 id="text-photo">Hi!! I'm Romildo. I build buildins and web pages.</h1>
-                    <p>Engenheiro civil | Engenheiro de Segurança do Trabalho | Gestão de projetos | Estudante de Desenvolvimento Web na Trybe​</p>        
+            <div id="presentation-picture"></div>
+        </section>
+        <section id="about-me">
+            <img src="./imagens_portfolio/foto perfil 1.png" alt="">
+        </section>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="social-container">
+                    <h2 class="social-title">Meus contatos</h2>
+                    <a target="_blank"  href="https://wa.me/5587999241374">
+                        <img src="https://4.bp.blogspot.com/-aBlnbw5X2wA/W7OKFquKsaI/AAAAAAAADMc/4PoluIaWUWEUjx7kMklt13sjrLx8UTSJACEwYBhgL/s1600/whatsapp-Cinza.png" alt="whatsapp-Cinza">
+                    </a>
+                    <a target="_blank"  href="https://www.linkedin.com/in/romildo-silva-79904092/">
+                        <img src="https://icon-library.com/images/linkedin-icon-png-black/linkedin-icon-png-black-17.jpg" alt="linkedin">
+                    </a>
+                    <a target="_blank"  href="https://github.com/RomildoFH">
+                        <img src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png" alt="github">
+                    </a>
                 </div>
+                <form id="contact-form">
+                    <h2>Solicite contato</h2>
+                    <label for="input-email">
+                        E-mail
+                    </label>
+                    <input type="email" name="email" id="input-email" class="input-form">
+                    <label for="input-name">
+                        Nome
+                    </label>
+                    <input type="text" name="name" id="input-name" class="input-form">
+                    <label for="input-telefone">
+                        Telefone
+                    </label>
+                    <input type="text" name="telefone" id="input-telefone" class="input-form">
+                    <label for="input-commentary">
+                        Comentário
+                    </label>
+                    <textarea name="commentary" id="input-commentary" cols="30" rows="10" class="input-form">
+                    </textarea>
+                    <button class="btn-submit btn-5">Enviar</button>
+                </form>
             </div>
         </section>
-        <section id="my-timeline">
-            <h2>My Life-Line</h2>            
-            <ul>
-                <li><strong>1994</strong> – Garanhuns, Pernambuco, Brasil Hello World!!</li>
-                <li><strong>2012</strong> – AESGA – Engenharia Civil</li>
-                <li><strong>2013</strong> – AESGA – Monitorias de geometria analítica, física, hidráulica, concreto armado e estabilidade​</li>
-                <li><strong>2014</strong> – Napolis – Estagiário de engenharia civil​</li>
-                <li><strong>2016</strong> – DPA – Analista de engenharia</li>
-                <li><strong>2017</strong> – Engenheiro civil​</li>
-                <li><strong>2018</strong> – DPA – Analista de segurança do trabalho​</li>
-                <li><strong>2019</strong> – FIP – Especialização em Segurança do trabalho​</li>
-                <li><strong>2022</strong> – Metropolitana – MBA Gestão de projetos​</li>
-                <li><strong>2022</strong> – Trybe – Estudante de desenvolvimento web</li>
-            </ul>            
-            <ul id="photo-colage">
-                <li class="big" style="background-image: url(./imagens_portfolio/image1.JPG)"></li>
-                <li class="small" style="background-image: url(./imagens_portfolio/image2.jpg)"></li>
-            </ul>            
-        </section>
-        <section>
-            <div id="hardskills-bg">
-                <div class="hardskills">
-                    <img id="quadro" src="imagens_portfolio/quadro-giz-em-branco-apagado-na-lousa-para-texto-ou-desenho-ou-educacao-grafica_52494-318 (1).jpg" alt="quadro-escolar">    
-                </div>
-                <!-- <div>
-                    <h2 id="hardskills-title">My Hardskills</h2>
-                </div>
-                <div id="hardskills-list">
-                    <ul>
-                        <li>Javascript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Unix & Bash</li>
-                        <li>VS Code</li>
-                        <li></li>
-                        <li></li>                        
-                    </ul>    
-                </div> -->
-            </div>
-        </section>
-                <div id="portfolio">
-                    <h2>Meu portfolio</h2>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-
-            </div>
-        
-        
     </main>
-
     <footer>
         <div id="footer">
-            <ul>
-                <li>romildo.silvafilho1@gmail.com</li>
-                <li>87 9.9924-1374</li>
-                <li> <a target="_blank"  href="https://www.linkedin.com/in/romildo-silva-79904092/">LinkedIn</a></li>
-            </ul>
+            <p>Este site foi criado por: Romildo Silva</p>
         </div>
+        <p></p>
     </footer>
 
     
