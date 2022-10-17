@@ -18,23 +18,104 @@
                 <h2 id="header-name">Romildo Silva</h2>
             </div>
             <div class="header-controls">
-                <button class="page-ancora-btn btn btn-4">About Me</button>
-                <button class="page-ancora-btn btn btn-4">My Projects</button>
-                <button class="page-ancora-btn btn btn-4">Hire Me</button>
+                <a href="#about-section" class="page-ancora-btn btn btn-4">Sobre mim</a>
+                <a href="#project-section" class="page-ancora-btn btn btn-4">Projetos</a>
+                <a href="#contact-section" class="page-ancora-btn btn btn-4">Contato</a>
             </div>
         </div>
     </header>
     <main>
         <section>
-            <div id="presentation-picture"></div>
+            <div id="presentation-picture">
+                <p id="text-presentation">Eu sou o Romildo<br>
+                Sou estudante de desenolvimento web na Trybe</p>
+            </div>
         </section>
-        <section id="about-me">
-            <img src="./imagens_portfolio/foto perfil 1.png" alt="">
+        <section id="about-section">
+            <h2>Sobre mim</h2>
+            <div id="about-container">
+                    <div id="education-container">
+                        <!-- <p>Educação</p> -->
+                        <ul id="education-list">
+                            <li>Engenharia civil (AESGA) - 2017</li>
+                            <li>Engenharia de segurança do trabalho (UNIFIP) - 2021</li>
+                            <li>MBA em Gestão de Projetos(Metropolitana) - 2022</li>
+                            <li>Desenvolvimento Web (Trybe) - On going</li>
+                        </ul>
+                    </div>
+                    <div id="tech-container">
+                        <!-- <p>Programação</p> -->
+                        <ul class="tech-list">
+                            <li class="tech-li">
+                                <img class="programming-icon" src="https://raw.githubusercontent.com/github/explore/d92924b1d925bb134e308bd29c9de6c302ed3beb/topics/terminal/terminal.png" alt="">
+                                <p>Unix & Bash</p>
+                            </li>
+                            <li class="tech-li">
+                                <img class="programming-icon" src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="">
+                                <p>HTML</p>
+                            </li>
+                            <li class="tech-li">
+                                <img class="programming-icon" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="">
+                                <p>CSS</p>
+                            </li>
+                            <li class="tech-li">
+                                <img class="programming-icon" src="https://www.logolynx.com/images/logolynx/54/54b5145b027a1ff11962bdf475c3fd43.png" alt="">
+                                <p>JavaScript</p>
+                            </li>
+                            <li class="tech-li">
+                                <img class="programming-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png" alt="">
+                                <p>React</p>
+                            </li>
+                            <li class="tech-li">
+                                <img class="programming-icon" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+                                <p>Git & GitHub</p>
+                            </li>
+                            <li class="tech-li">
+                                <img class="programming-icon" src="https://user-images.githubusercontent.com/18430599/38112659-491f9112-3368-11e8-8b65-1725f19a61fa.png" alt="">
+                                <p>Storybook</p>
+                            </li>
+                            <li class="tech-li">
+                                <img class="programming-icon" src="https://camo.githubusercontent.com/bec2c92468d081617cb3145a8f3d8103e268bca400f6169c3a68dc66e05c971e/68747470733a2f2f76352e676574626f6f7473747261702e636f6d2f646f63732f352e302f6173736574732f6272616e642f626f6f7473747261702d6c6f676f2d736861646f772e706e67" alt="">
+                                <p>Bootstrap</p>
+                            </li>
+                            <li class="tech-li">
+                                <img class="programming-icon" src="https://icons.veryicon.com/png/o/internet--web/internet-simple-icon/api-management.png" alt="">
+                                <p>APIs</p>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
         </section>
-        <section class="contact-section">
+        <section class="project-section" id="project-section">
+            <h2>Projetos</h2>
+            <div class="project-gallery">
+                <div id ="tryunfoProject" class="project-card">
+                    <img src="./imagens_portfolio/projetos/Screenshot from 2022-10-16 19-40-16.png" alt="tryunfoProject" class="project-img">
+                    <h4 class="project-title">Projeto Tryunfo</h4>
+                    <p class="project-description">Projeto elaborado utilizando componentes React para a criação de um jogo do tipo trunfo.</p>
+                    <a class="card-link" href="https://romildofh.github.io/tryunfo-project/" target="_blank">Abrir</a>
+                    <a class="card-link" href="https://github.com/RomildoFH/tryunfo-project" target="_blank">Repositorio</a>
+                </div>
+                <div id ="solarSystemProject" class="project-card">
+                    <img src="./imagens_portfolio/projetos/Screenshot from 2022-10-16 19-40-52.png" alt="solarSystemProject" class="project-img">
+                    <h4 class="project-title">Projeto Sistema Solar</h4>
+                    <p class="project-description">Projeto elaborado utilizando componentes React para a criação de um site que contém informações sobre o sistema solar e as missões espaciais.</p>
+                    <a class="card-link" href="https://romildofh.github.io/solar-system-project/" target="_blank">Abrir</a>
+                    <a class="card-link" href="https://github.com/RomildoFH/solar-system-project" target="_blank">Repositorio</a>
+                </div>
+                <div id ="igniteLabDesignSystem" class="project-card">
+                    <img src="./imagens_portfolio/projetos/Screenshot from 2022-10-16 19-41-16.png" alt="igniteLabDesignSystem" class="project-img">
+                    <h4 class="project-title">Design System - Ignite Lab</h4>
+                    <p class="project-description">Projeto realizado durante o ignite lab da RocketSeat com a elaboração de um site utilizando componentes React, Storybook e outras bibliotecas e frameworkings.</p>
+                    <a class="card-link" href="https://romildofh.github.io/ignite-lab-design-system/?path=/story/components-button--default" target="_blank">Abrir</a>
+                    <a class="card-link" href="https://github.com/RomildoFH/ignite-lab-design-system" target="_blank">Repositorio</a>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-section">
             <div class="contact-container">
                 <div class="social-container">
-                    <h2 class="social-title">Meus contatos</h2>
+                    <h2 class="social-title">Contatos</h2>
                     <a target="_blank"  href="https://wa.me/5587999241374">
                         <img src="https://4.bp.blogspot.com/-aBlnbw5X2wA/W7OKFquKsaI/AAAAAAAADMc/4PoluIaWUWEUjx7kMklt13sjrLx8UTSJACEwYBhgL/s1600/whatsapp-Cinza.png" alt="whatsapp-Cinza">
                     </a>
@@ -46,24 +127,23 @@
                     </a>
                 </div>
                 <form id="contact-form">
-                    <h2>Solicite contato</h2>
+                    <h2>Entre contato</h2>
                     <label for="input-email">
                         E-mail
                     </label>
-                    <input type="email" name="email" id="input-email" class="input-form">
+                    <input type="email" name="email" id="input-email" class="input-form" placeholder="Insira e-mail válido">
                     <label for="input-name">
                         Nome
                     </label>
-                    <input type="text" name="name" id="input-name" class="input-form">
+                    <input type="text" name="name" id="input-name" class="input-form" placeholder="Seu nome completo">
                     <label for="input-telefone">
                         Telefone
                     </label>
-                    <input type="text" name="telefone" id="input-telefone" class="input-form">
+                    <input type="text" name="telefone" id="input-telefone" class="input-form" placeholder="DDD + 9 Dígitos">
                     <label for="input-commentary">
                         Comentário
                     </label>
-                    <textarea name="commentary" id="input-commentary" cols="30" rows="10" class="input-form">
-                    </textarea>
+                    <textarea name="commentary" id="input-commentary" cols="30" rows="10" class="input-form" placeholder="Por favor, deixe sua mensagem."></textarea>
                     <button class="btn-submit btn-5">Enviar</button>
                 </form>
             </div>
@@ -75,7 +155,5 @@
         </div>
         <p></p>
     </footer>
-
-    
 </body>
 </html>
