@@ -11,6 +11,6 @@ const printHello = (firstName, lastName) => {
 console.log(printHello());
 
 ```
-This's amazing see you here. I'm ${firstName} ${lastName}, feel free to look around and call me if you need.
+This's amazing see you here. I'm Romildo Silva, feel free to look around and call me if you need.
 ```
 ````
