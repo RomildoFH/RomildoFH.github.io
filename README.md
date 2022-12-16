@@ -25,4 +25,4 @@ I'm civil engineer :construction: and after some time of thinking and visiting s
 
 To get in touch with me, please use one of the options below
 
-
+<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
