@@ -17,7 +17,7 @@ This's amazing see you here. I'm Romildo Silva, feel free to look around and cal
 
 ## About Me
 
-How you could see above, my name is Romildo Silva.
+How you could see above, my name is **Romildo Silva**.
 
 :earth_americas: I'm from Brazil
 
