@@ -9,11 +9,10 @@ font-family: 'Playfair Display SC', serif; */
 body {
     background-color: black;
     color: white;
+    margin: 0 4px;
     /* font-family: 'Playfair Display SC', serif; */
 }
-
-header {}
-
+@media only screen and (min-width: 1100px) {
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -57,8 +56,6 @@ header {}
     text-transform: uppercase;
     width: 130px;
 }
-/* ----------------------------------------------------------------------------------------
-This part of the code was based on the code located at this article: https://onaircode.com/css-gradient-button-examples/ */
 .btn {
     display: flex;
     flex: 1 1 auto;
@@ -76,13 +73,11 @@ This part of the code was based on the code located at this article: https://ona
     box-shadow: 2px 2px 2px black;
    }
    .btn:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
   }
    .btn-4 {
     background-image: linear-gradient(to right, #242527 0%, #85888a 51%, #eceff3 100%);
   }
-/* End of the code from onaircode.com */
-/* --------------------------------------------------------------------------------------------- */
 
 #about-section {
     background-image: url('https://cdn.pixabay.com/photo/2018/03/10/09/45/businessman-3213659_960_720.jpg');
@@ -175,6 +170,8 @@ This part of the code was based on the code located at this article: https://ona
     font-family: 'Laila', sans-serif;
     background-color: #242527;
     box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.288);
+    margin-bottom: 30px;
+    padding: 4px;
 }
 
 .project-card:hover {
@@ -189,12 +186,27 @@ This part of the code was based on the code located at this article: https://ona
     color: white;
     text-decoration: none;
     font-style: italic;
+    background-color: #85888a;
+    text-decoration: none;
+    padding: 4px;
 }
 
 .card-link:hover {
     color: white;
     text-decoration: underline;
     font-style: italic;
+    background-color: #85888a;
+    text-decoration: none;
+    padding: 4px;
+}
+
+.card-link:visited {
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+    background-color: #85888a;
+    text-decoration: none;
+    padding: 4px;
 }
 
 .contact-section {
@@ -216,11 +228,12 @@ This part of the code was based on the code located at this article: https://ona
     justify-content: space-between;
     margin-left: 40%;
     width: 60%;
+    height: 300px;
 }
 
 .social-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
@@ -278,7 +291,7 @@ textarea {
     width: 80%;
    }
    .btn-submit:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
   }
    .btn-5 {
     background-image: linear-gradient(to right, #242527 0%, #85888a 51%, #eceff3 100%);
@@ -287,3 +300,609 @@ textarea {
   footer {
     text-align: center;
   }
+  }
+
+@media only screen and (max-width: 500px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        margin-top: 5px;
+        font-family: 'Playfair Display SC', serif;
+    }
+    
+    #header-title {
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+    
+    #logo-header {
+        max-width: 20%;
+    }
+    
+    #header-name {
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: 15px;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 16px;
+    }
+    
+    .header-controls {
+        display: flex;
+        max-height: 70%;
+        max-width: 60%;
+        justify-content: space-between;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    
+    .page-ancora-btn {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 8px;
+        font-weight: 700;
+        max-height: 60%;
+        padding: 4px 12px;
+        text-transform: uppercase;
+        width: 25%;
+        margin: 0 5px;
+    }
+    /* ----------------------------------------------------------------------------------------
+    This part of the code was based on the code located at this article: https://onaircode.com/css-gradient-button-examples/ */
+    .btn {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border: 0px;
+        box-shadow: 2px 2px 2px black;
+       }
+       .btn:hover {
+        background-position: right center; /* change the direction of the change here */
+      }
+       .btn-4 {
+        background-image: linear-gradient(to right, #242527 0%, #85888a 51%, #eceff3 100%);
+      }
+    /* End of the code from onaircode.com */
+    /* --------------------------------------------------------------------------------------------- */
+        
+    #presentation-picture {
+        background-image: url("./imagens_portfolio/Imagem3.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100%;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 100px;
+        max-height: 190px;
+        margin: 0;
+        text-align: left;
+        width: 100%;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 40px;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    #about-section {
+        background-image: url('https://cdn.pixabay.com/photo/2018/03/10/09/45/businessman-3213659_960_720.jpg');
+        background-size: cover;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        max-width: 100%;
+        max-height: 200px;
+        text-shadow: 2px 2px 2px black;
+        font-family: 'Playfair Display SC', serif;
+    }
+    
+    h2 {
+        margin-bottom: 4px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    #education-container {
+        width: 100%;
+    }
+    
+    #education-list {
+        height: max-content;
+        font-size: 10px;
+    }
+    
+    #education-list li {
+        height: 20px;
+        margin-bottom: 2px;
+    }
+    
+    #education-list li:hover {
+        background-color: rgba(128, 128, 128, 0.575);
+    }
+    
+    #tech-container {
+        width: 100%;
+    }
+    
+    .tech-list {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+    
+    .programming-icon {
+        /* width: 10%; */
+        height: 100%;
+    }
+    
+    .tech-li {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        /* margin-right: 8px; */
+    }
+
+    #text-presentation {
+        position: absolute;
+        font-size: 16px;
+    }
+        
+    .project-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 16px;
+    }
+    
+    .project-card {
+        display: flex;
+        width: 100%;
+        text-align: justify;
+        font-family: 'Laila', sans-serif;
+        font-size: 12px;
+        background-color: #242527;
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.288);
+        margin-bottom: 30px;
+    }
+    
+    .project-card:hover {
+        width: 100%;
+    }
+    
+    .project-card img {
+        width: 50%;
+        margin-right: 8px;
+    }
+    
+    .card-link {
+        color: white;
+        font-style: italic;
+        background-color: #85888a;
+        text-decoration: none;
+        padding: 4px;
+    }
+    
+    .card-link:hover {
+        color: white;
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    .card-link:visited {
+        color: white;
+        text-decoration: underline;
+        font-style: italic;
+        text-decoration: none;
+    }
+    
+    .contact-section {
+        background-image: url("https://cdn.pixabay.com/photo/2020/10/28/06/11/smartphone-5692533_960_720.jpg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        /* min-height: 500px;
+        max-height: 100%; */
+        margin-top: 8px;
+        width: 100%;
+        font-family: 'Playfair Display SC', serif;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .social-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .social-title {
+        justify-self:flex-start;
+    }
+    
+    .social-container a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .social-container img {
+        width: 50%;
+    }
+    
+    .social-container img:hover {
+        width: 35%;
+        
+    }
+    
+    #contact-form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 70%;
+    }
+    
+    label {
+        margin-top: 15px;
+    }
+    
+    .input-form {
+        margin-top: 4px;
+        width: 80%;
+    }
+    
+    textarea {
+        resize: none;
+    }
+    
+    .btn-submit {
+        flex: 1 1 auto;
+        margin-top: 14px;
+        padding: 4px 12px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border: 0px;
+        box-shadow: 2px 2px 2px black;
+        width: 80%;
+       }
+       .btn-submit:hover {
+        background-position: right center; /* change the direction of the change here */
+      }
+       .btn-5 {
+        background-image: linear-gradient(to right, #242527 0%, #85888a 51%, #eceff3 100%);
+      }
+    
+      footer {
+        text-align: center;
+      }
+}
+
+@media only screen and (max-width: 1099px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        margin-top: 5px;
+        font-family: 'Playfair Display SC', serif;
+    }
+    
+    #header-title {
+        background-color: white;
+        color: black;
+        display: flex;
+        align-items: center;
+        width: 80%;
+    }
+    
+    #logo-header {
+        max-width: 20%;
+    }
+    
+    #header-name {
+        text-align: center;
+        text-transform: uppercase;
+        margin-left: 15px;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 16px;
+    }
+    
+    .header-controls {
+        display: flex;
+        max-height: 70%;
+        max-width: 60%;
+        justify-content: space-between;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    
+    .page-ancora-btn {
+        font-family: 'Playfair Display SC', serif;
+        font-size: 8px;
+        font-weight: 700;
+        max-height: 60%;
+        padding: 4px 12px;
+        text-transform: uppercase;
+        width: 25%;
+        margin: 0 5px;
+    }
+    /* ----------------------------------------------------------------------------------------
+    This part of the code was based on the code located at this article: https://onaircode.com/css-gradient-button-examples/ */
+    .btn {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border: 0px;
+        box-shadow: 2px 2px 2px black;
+       }
+       .btn:hover {
+        background-position: right center; /* change the direction of the change here */
+      }
+       .btn-4 {
+        background-image: linear-gradient(to right, #242527 0%, #85888a 51%, #eceff3 100%);
+      }
+    /* End of the code from onaircode.com */
+    /* --------------------------------------------------------------------------------------------- */
+        
+    #presentation-picture {
+        background-image: url("./imagens_portfolio/Imagem3.jpg");
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        min-height: 250px;
+        max-height: 30%;
+        margin-top: 40px;
+        text-align: left;
+        width: 100%;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 40px;
+        text-shadow: 2px 2px 2px black;
+    }
+
+    #about-section {
+        background-image: url('https://cdn.pixabay.com/photo/2018/03/10/09/45/businessman-3213659_960_720.jpg');
+        background-size: cover;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        max-width: 100%;
+        max-height: 200px;
+        text-shadow: 2px 2px 2px black;
+        font-family: 'Playfair Display SC', serif;
+    }
+    
+    h2 {
+        margin-bottom: 4px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    #education-container {
+        width: 100%;
+    }
+    
+    #education-list {
+        height: max-content;
+        font-size: 10px;
+    }
+    
+    #education-list li {
+        height: 20px;
+        margin-bottom: 2px;
+    }
+    
+    #education-list li:hover {
+        background-color: rgba(128, 128, 128, 0.575);
+    }
+    
+    #tech-container {
+        width: 100%;
+    }
+    
+    .tech-list {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 10px;
+    }
+    
+    .programming-icon {
+        /* width: 10%; */
+        height: 100%;
+    }
+    
+    .tech-li {
+        display: flex;
+        align-items: center;
+        height: 20px;
+        /* margin-right: 8px; */
+    }
+
+    #text-presentation {
+        position: absolute;
+        font-size: 16px;
+    }
+        
+    .project-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 16px;
+    }
+    
+    .project-card {
+        display: flex;
+        width: 100%;
+        text-align: justify;
+        font-family: 'Laila', sans-serif;
+        font-size: 12px;
+        background-color: #242527;
+        box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.288);
+        margin-bottom: 30px;
+    }
+    
+    .project-card:hover {
+        width: 100%;
+    }
+    
+    .project-card img {
+        width: 50%;
+        margin-right: 8px;
+    }
+    
+    .card-link {
+        color: white;
+        background-color: #85888a;
+        text-decoration: none;
+        font-style: italic;
+        padding: 4px;
+        text-decoration: none;
+    }
+    
+    .card-link:hover {
+        color: white;
+        text-decoration: underline;
+        font-style: italic;
+    }
+
+    .card-link:visited {
+        color: white;
+        text-decoration: underline;
+        font-style: italic;
+        text-decoration: none;
+    }
+    
+    .contact-section {
+        background-image: url("https://cdn.pixabay.com/photo/2020/10/28/06/11/smartphone-5692533_960_720.jpg");
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        /* min-height: 500px;
+        max-height: 100%; */
+        margin-top: 8px;
+        width: 100%;
+        font-family: 'Playfair Display SC', serif;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .social-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .social-title {
+        justify-self:flex-start;
+    }
+    
+    .social-container a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .social-container img {
+        width: 50%;
+    }
+    
+    .social-container img:hover {
+        width: 35%;
+        
+    }
+    
+    #contact-form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 70%;
+    }
+    
+    label {
+        margin-top: 15px;
+    }
+    
+    .input-form {
+        margin-top: 4px;
+        width: 80%;
+    }
+    
+    textarea {
+        resize: none;
+    }
+    
+    .btn-submit {
+        flex: 1 1 auto;
+        margin-top: 14px;
+        padding: 4px 12px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        border: 0px;
+        box-shadow: 2px 2px 2px black;
+        width: 80%;
+       }
+       .btn-submit:hover {
+        background-position: right center; /* change the direction of the change here */
+      }
+       .btn-5 {
+        background-image: linear-gradient(to right, #242527 0%, #85888a 51%, #eceff3 100%);
+      }
+    
+      footer {
+        text-align: center;
+      }
+}
+ 
