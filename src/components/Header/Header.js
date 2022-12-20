@@ -27,11 +27,7 @@ function Header() {
   }
 
   const history = useHistory();
-
-  const goHome = () => {
-    history.push('/')
-  }
-
+ 
   return (
     <div>
       <header className={ `header-theme-${theme}` }>

@@ -4,7 +4,7 @@ import AppContext from './AppContext';
 function AppProvider({ children }) {
   const [isLoading, setIsLoading] = useState(true);
   const [menuHidde, setMenuHidde] = useState(true);
-  const [projectsHidde, setProjectsHidde] = useState(false);
+  const [projectsHidde, setProjectsHidde] = useState(true);
   const [theme, setTheme] = useState('light');
 
   const values = useMemo(() => ({
