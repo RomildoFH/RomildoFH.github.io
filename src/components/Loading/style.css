@@ -1,0 +1,49 @@
+#loading-container-light {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+#loading-container-dark {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  background-color: #212020;
+  color: #FFFFFF;
+  height: 100vh;
+}
+
+#loading-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loading-text {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  #loading-image {
+    width: 60%;
+  }
+  #loading-text {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 401px) {
+  #loading-container {
+    margin-top: 2vh;
+    max-height: 100%;
+  }
+
+  #loading-image {
+    max-width: 60%;
+    max-height: 30%;
+  }
+  #loading-text {
+    font-size: 1.2rem;
+  }
+}
