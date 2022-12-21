@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import AppContext from './AppContext';
 
 function AppProvider({ children }) {
@@ -6,6 +6,20 @@ function AppProvider({ children }) {
   const [menuHidde, setMenuHidde] = useState(true);
   const [projectsHidde, setProjectsHidde] = useState(true);
   const [theme, setTheme] = useState('light');
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+  };
+
+  useEffect(() => {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+
+      return () => {
+          window.removeEventListener('scroll', handleScroll);
+      };
+  }, []);
 
   const values = useMemo(() => ({
     isLoading,
@@ -16,7 +30,8 @@ function AppProvider({ children }) {
     setProjectsHidde,
     theme,
     setTheme,
-  }), [isLoading, menuHidde, projectsHidde, theme])
+    scrollPosition,
+  }), [isLoading, menuHidde, projectsHidde, theme, scrollPosition])
 
   return (
     <AppContext.Provider value={ values }>

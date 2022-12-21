@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Loading from '../components/Loading/Loading';
 import Header from '../components/Header/Header';
@@ -7,6 +7,7 @@ import { firstParagraph, secondParagraph } from './helpers/descriptionText';
 import projects from './helpers/projectsList';
 import * as Icon from "phosphor-react";
 import '../styles/Home.css';
+import Footer from '../components/Footer/Footer';
 
 const perfilImage = require('../images/perfil.jpeg');
 
@@ -20,6 +21,8 @@ function Home() {
     setProjectsHidde,
     theme,
    } = useContext(AppContext);
+
+   const [arrowPosition, setArrowPosition] = useState(10);
 
    const history = useHistory();
 
@@ -49,7 +52,7 @@ function Home() {
         setProjectsHidde(false)
         setTimeout(() => {
           window.scrollTo({
-            top: '800',
+            top: '300',
             behavior: 'smooth',
           });          
         }, 0); 
@@ -73,7 +76,7 @@ function Home() {
 
   const generalClick = () => {
     setMenuHidde(true);
-  }
+  }  
   
   return (
     <>
@@ -94,7 +97,11 @@ function Home() {
                   <button className={ `btn-${ theme }` } onClick={ redirectToAbout }>About Me</button>
                 </div>
                 <div className="btn-next-section" onClick={ showPortfolio }>
-                  <Icon.ArrowDown size={52} className={ `arrow-down-${ theme }` }/>
+                  <Icon.ArrowDown
+                    size={52}
+                    className={ `arrow-down-${ theme }` }
+                    style={ {'marginBottom': `${ arrowPosition }px`} }
+                  />
                   <p>
                     {
                       projectsHidde ? ('view my portfolio') : ('hidde my portfolio')
@@ -111,6 +118,7 @@ function Home() {
                 )
               }
             </main>
+            <Footer />
           </div>
         )
       }

@@ -14,12 +14,20 @@
   background-color: var(--header-bg-light);
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.425);
 }
 
 .header-theme-dark {
   background-color: var(--header-bg-dark);
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 #logo-container {
@@ -48,7 +56,7 @@
   height: 24px;
 }
 
-#menu-container-light {
+#menu-container-light{
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -57,6 +65,7 @@
   width: 40%;
   max-width: 500px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+  top: 50px;
 }
 
 #menu-container-light button {
@@ -77,6 +86,7 @@
   width: 40%;
   max-width: 500px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+  top: 50px;
 }
 
 #menu-container-dark button {

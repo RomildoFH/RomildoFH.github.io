@@ -87,10 +87,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--text-light-color);
 }
 
 #description-container-dark {
-  max-width: 100vw;
+  width: calc(100vw - 50px);
   background-color: var(--text-box-dark);
   padding: 50px 10px 10px 10px;
   margin-left: 5px;
@@ -157,13 +158,26 @@
 }
 
 .arrow-down-light {
-  margin-top: 12px;
   color: var(--arrow-light);
+  margin-bottom: 10px;
+  animation: moveVertical 1s infinite;
+  animation-direction: alternate;
 }
 
 .arrow-down-dark {
-  margin-top: 12px;
   color: var(--arrow-dark);
+  animation: moveVertical 1s infinite;
+  animation-direction: alternate;
+}
+/* Animation of the arrow was found on this site:
+https://css-tricks.com/almanac/properties/t/transform/ */
+@keyframes moveVertical {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 10px);
+  }
 }
 
 #projects-portfolio-light {

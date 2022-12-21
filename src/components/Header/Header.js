@@ -1,11 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import AppContext from '../../context/AppContext';
 import * as Icon from "phosphor-react";
 import './style.css';
 
 function Header() {
-  const { theme, setTheme, menuHidde, setMenuHidde } = useContext(AppContext);
+  const { theme, setTheme, menuHidde, setMenuHidde, scrollPosition } = useContext(AppContext);
+  const [position, setPosition] = useState('block');
 
   const changeTheme = () => {
     if (theme === 'light') {
@@ -27,10 +28,22 @@ function Header() {
   }
 
   const history = useHistory();
+
+  const determinePosition = () => {
+    if (scrollPosition > 25) {
+      setPosition('fixed');
+    } else {
+      setPosition('block');
+    }
+  }
+
+  useEffect(() => {
+    determinePosition()
+  }, [scrollPosition]);
  
   return (
     <div>
-      <header className={ `header-theme-${theme}` }>
+      <header className={ `header-theme-${theme} ${position}`}>
         <div id="logo-container" onClick={ () => history.push('/') } />
         <div id="header-controls-container">
           <button id="btn-theme" type="button" className="header-controls" onClick={ changeTheme }>
@@ -47,15 +60,20 @@ function Header() {
             <Icon.List color="#FFFFFF" alt="menu-icon" />
           </button>
         </div>
+        {
+          !menuHidde ? (
+            <div
+              id={ `menu-container-${ theme }` }
+            >
+              <button>Projects</button>
+              <button>About Me</button>
+              <button>Contact</button>
+            </div>
+          ) : null
+        }
       </header>
       {
-        !menuHidde ? (
-          <div id={ `menu-container-${ theme }` }>
-            <button>Projects</button>
-            <button>About Me</button>
-            <button>Contact</button>
-          </div>
-        ) : null
+        position === 'fixed' ? <div style={ {'height': '50px'} } /> : null
       }
     </div>
   )
