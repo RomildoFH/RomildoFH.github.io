@@ -1,0 +1,79 @@
+:root {
+  --main-bg-light-color: #F7F7F7;
+  --main-bg-dark-color: #2F2F2F;
+  --header-bg-light: #2F6CA4;
+  --header-bg-dark: #2F2F2F;
+  --text-light-color: #000000;
+  --text-dark-color: #FFFFFF;
+  --secound-bg-light: #FAA037;
+  --secound-bg-dark: #212020;
+  --text-box-light: #F0EFEF;
+  --text-box-dark: #505050;
+  --arrow-light: #165805;
+  --arrow-dark: #FAA037;
+  --full-white: #FFFFFF;
+}
+
+.project-detail-background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  color: var(--text-dark-color);
+}
+
+.btn-close {
+  align-self: flex-end;
+  margin: 30px;  
+}
+
+.project-title-details {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.project-img-details {
+  width: 100%;
+  min-width: 340px;
+  max-width: 750px;
+  height: max-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-description-details {
+  display: block;
+  font-size: 16px;
+  text-align: justify;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details-button {
+  display: flex;
+  justify-content: center;
+}
+
+.card-link {
+  text-decoration: none;
+  color: var(--text-box-light);
+  background-color: var(--text-box-dark);
+  width: 100px;
+  margin: 0 30px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.568);
+}
