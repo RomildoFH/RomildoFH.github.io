@@ -31,7 +31,6 @@ function Home() {
 
   const lineBreaker = (text) => {
     const newArray = text.split('//n');
-    console.log(newArray)
     return newArray.map((line, index) => (
       <p key={ `line-${index}` }>{line}</p>
     ));
@@ -48,21 +47,27 @@ function Home() {
         break;    
       default:
         setProjectsHidde(false)
+        setTimeout(() => {
+          window.scrollTo({
+            top: '800',
+            behavior: 'smooth',
+          });          
+        }, 0); 
         break;
-    }
+    }    
   }
 
   const showProject = () => {
-    return projects.map((project) => (
-      <div id ="trivia" class="project-card">
-                    <img src="./imagens_portfolio/projetos/pixel-art.gif" alt="pixels-art" class="project-img" />
-                    <div>
-                        <h4 class="project-title">Pixels Art</h4>
-                        <p class="project-description">Projeto desenvolvido utilizando JavaScript, HTML e CSS. Neste projeto os elementos DOM são manipulados com JS</p>
-                        <a class="card-link" href="https://pixel-art-chi-jet.vercel.app/" target="_blank">Abrir Projeto</a>
-                        <a class="card-link" href="https://github.com/RomildoFH/pixel-art" target="_blank">Repositorio</a>
-                    </div>
-                </div>
+    return projects.map((project, index) => (
+      <div id ="trivia" className={ `project-card-${ theme }` } key={ `project-${index}` }>
+        <img src={ project.thumb } alt="pixels-art" className="project-img" />
+        <div>
+          <h4 className="project-title">{ project.name }</h4>
+          {/* <p className="project-description">{ project.resume }</p>
+          <a className="card-link" href={ project.openLink } target="_blank" rel="noreferrer">Open Project</a>
+          <a className="card-link" href={ project.repositoryLink } target="_blank" rel="noreferrer">Repository</a> */}
+          </div>
+      </div>
     ))
   }
   
@@ -86,17 +91,21 @@ function Home() {
                 </div>
                 <div className="btn-next-section" onClick={ showPortfolio }>
                   <Icon.ArrowDown size={52} className={ `arrow-down-${ theme }` }/>
-                  <p>view my portfolio</p>
+                  <p>
+                    {
+                      projectsHidde ? ('view my portfolio') : ('hidde my portfolio')
+                    }
+                  </p>
                 </div>
               </section>
+
               {
                 projectsHidde ? null : (
-                  showProject()
+                  <section id={`projects-portfolio-${ theme }`}>
+                  { showProject() }
+                  </section>
                 )
               }
-              <section id="projects-portfolio">
-
-              </section>
             </main>
           </div>
         )

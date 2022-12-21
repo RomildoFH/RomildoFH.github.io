@@ -3,7 +3,7 @@
 }
 
 :root {
-  --main-bg-light-color: #FFFFFF;
+  --main-bg-light-color: #F7F7F7;
   --main-bg-dark-color: #2F2F2F;
   --header-bg-light: #2F6CA4;
   --header-bg-dark: #2F2F2F;
@@ -15,6 +15,7 @@
   --text-box-dark: #505050;
   --arrow-light: #165805;
   --arrow-dark: #FAA037;
+  --full-white: #FFFFFF;
 }
 
 #presentation-light {
@@ -22,7 +23,9 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--main-bg-light-color);
-  color: var(--text-light-color)
+  color: var(--text-light-color);
+  height: 92vh;
+  /* justify-content: space-between; */
 }
 
 #presentation-dark {
@@ -30,7 +33,8 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--main-bg-dark-color);
-  color: var(--text-dark-color)
+  color: var(--text-dark-color);
+  height: 92vh;
 }
 
 #image-container-light {
@@ -74,7 +78,7 @@
 }
 
 #description-container-light {
-  max-width: 100vw;
+  width: calc(100vw - 50px);
   background-color: var(--text-box-light);
   padding: 50px 10px 10px 10px;
   margin-left: 5px;
@@ -146,7 +150,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   width: 100%;
+  flex-grow: 1;
+  
 }
 
 .arrow-down-light {
@@ -157,4 +164,50 @@
 .arrow-down-dark {
   margin-top: 12px;
   color: var(--arrow-dark);
+}
+
+#projects-portfolio-light {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: var(--main-bg-light-color);
+  color: var(--text-light-color);
+}
+
+#projects-portfolio-dark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  background-color: var(--main-bg-dark-color);
+  color: var(--text-dark-color);
+}
+
+.project-card-light {
+  width: 165px;
+  height: 199px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--full-white);
+}
+
+.project-card-dark {
+  width: 165px;
+  height: 199px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-img {
+  width: 153px;
+  height: 175px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.project-title {
+  text-align: center;
 }
