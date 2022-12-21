@@ -70,6 +70,10 @@ function Home() {
       </div>
     ))
   }
+
+  const generalClick = () => {
+    setMenuHidde(true);
+  }
   
   return (
     <>
@@ -79,7 +83,7 @@ function Home() {
           <div>
             <Header />
             <main>
-              <section id={ `presentation-${ theme }` }>
+              <section id={ `presentation-${ theme }` } onClick={ generalClick }>
                 <div id={ `image-container-${ theme }` }>
                   <img src={ perfilImage } alt="my-perfil" id={ `perfil-${ theme }` } />
                 </div>
