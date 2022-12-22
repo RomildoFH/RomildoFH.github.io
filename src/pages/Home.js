@@ -111,11 +111,10 @@ function Home() {
                   </p>
                 </div>
               </section>
-
               {
                 projectsHidde ? null : (
                   <section id={`projects-portfolio-${ theme }`}>
-                  { showProject() }
+                    { showProject() }
                   </section>
                 )
               }

@@ -1,10 +1,10 @@
 const projects = [
   {
     name: 'Pixels Art',
-    resume: 'Projeto elaborado utilizando componentes React para a criação de um jogo do tipo trunfo.',
+    resume: 'Projeto desenvolvido utilizando JavaScript, HTML e CSS. Neste projeto os elementos DOM são manipulados com JS.',
     thumb: require('../../images/projects/pixel-art.gif'),
-    openLink: 'https://romildofh.github.io/tryunfo-project/',
-    repositoryLink: 'https://github.com/RomildoFH/tryunfo-project',
+    openLink: 'https://pixel-art-chi-jet.vercel.app/',
+    repositoryLink: 'https://github.com/RomildoFH/pixel-art',
   },
   {
     name: 'Projeto Sistema Solar',
