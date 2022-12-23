@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RomildoFH.github.io/static/css/main.c1798f1a.css",
-    "main.js": "/RomildoFH.github.io/static/js/main.0b95c33e.js",
+    "main.js": "/RomildoFH.github.io/static/js/main.d9a8e993.js",
     "static/js/787.1f11dfe9.chunk.js": "/RomildoFH.github.io/static/js/787.1f11dfe9.chunk.js",
     "static/media/pixel-art.gif": "/RomildoFH.github.io/static/media/pixel-art.dd80865f32eed2826ba6.gif",
     "static/media/2GU.gif": "/RomildoFH.github.io/static/media/2GU.185ace0e3c4b36f460dc.gif",
@@ -21,11 +21,11 @@
     "static/media/JavaScript-Logo.png": "/RomildoFH.github.io/static/media/JavaScript-Logo.bd63e43304d0aca76a3b.png",
     "index.html": "/RomildoFH.github.io/index.html",
     "main.c1798f1a.css.map": "/RomildoFH.github.io/static/css/main.c1798f1a.css.map",
-    "main.0b95c33e.js.map": "/RomildoFH.github.io/static/js/main.0b95c33e.js.map",
+    "main.d9a8e993.js.map": "/RomildoFH.github.io/static/js/main.d9a8e993.js.map",
     "787.1f11dfe9.chunk.js.map": "/RomildoFH.github.io/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1798f1a.css",
-    "static/js/main.0b95c33e.js"
+    "static/js/main.d9a8e993.js"
   ]
 }
