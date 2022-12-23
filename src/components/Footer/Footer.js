@@ -11,7 +11,7 @@ function Footer() {
 
   return (
     <footer className={`footer-${theme}`}>
-      <p>Contact Me</p>
+      <p id="contact-me">Contact Me</p>
       <a href="https://github.com/RomildoFH" target="_blank" rel="noreferrer">
         <img src={ gitHubIcon } alt="github-icon" className="contact-icons" />
       </a>

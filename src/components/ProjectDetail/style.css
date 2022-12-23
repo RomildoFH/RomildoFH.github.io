@@ -68,6 +68,7 @@
 
 .card-link {
   text-decoration: none;
+  text-align: center;
   color: var(--text-box-light);
   background-color: var(--text-box-dark);
   width: 100px;

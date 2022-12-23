@@ -86,9 +86,9 @@ function Home() {
       {
         isLoading ? <Loading />
         : (
-          <div>
+          <div className="home-screen">
             <Header />
-            <main>
+            <main className={ `home-main-${ theme }` }>
               <section id={ `presentation-${ theme }` } onClick={ generalClick }>
                 <div id={ `image-container-${ theme }` }>
                   <img src={ perfilImage } alt="my-perfil" id={ `perfil-${ theme }` } />
@@ -104,7 +104,7 @@ function Home() {
                     size={52}
                     className={ `arrow-down-${ theme }` }
                   />
-                  <p>
+                  <p id="my-projects">
                     {
                       projectsHidde ? ('view my portfolio') : ('hidde my portfolio')
                     }

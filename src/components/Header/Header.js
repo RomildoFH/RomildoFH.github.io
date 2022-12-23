@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import AppContext from '../../context/AppContext';
 import * as Icon from "phosphor-react";
 import './style.css';
@@ -65,9 +65,9 @@ function Header() {
             <div
               id={ `menu-container-${ theme }` }
             >
-              <button>Projects</button>
-              <button>About Me</button>
-              <button>Contact</button>
+              <button onClick={() => setMenuHidde(true)}><Link to="/">Home</Link></button>
+              <button onClick={() => setMenuHidde(true)}><Link to="/aboutme">About Me</Link></button>
+              <button onClick={() => setMenuHidde(true)}><a href="#contact-me">Contact</a></button>
             </div>
           ) : null
         }
